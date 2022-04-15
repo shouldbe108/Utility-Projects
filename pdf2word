@@ -1,0 +1,10 @@
+from pdf2docx import Converter
+
+pdf_file ="" #enter file name with .pdf extension
+word_file= "" #enter file name to be given to converted file when it is saved with extension .docx
+
+file_in = Converter(pdf_file)
+file_in.convert(word_file, start=0, end=None)
+file_in.close()
+
+#source:https://www.youtube.com/watch?v=n7B_jt_WBfs
